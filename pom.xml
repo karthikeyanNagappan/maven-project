@@ -1,0 +1,26 @@
+[10:54] Parvathareddy, Sravani
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<groupId>com.fresco.play</groupId>
+<artifactId>maven-profile-explicit</artifactId>
+<packaging>jar</packaging>
+<version>0.0.1-SNAPSHOT</version>
+<name>maven-profile-explicit</name>
+<!-- Insert your configurations here -->
+<profiles>
+<profile>
+<id>dev</id>
+<activation><activeByDefault>true</activeByDefault></activation>
+<properties>
+<db.env>DEV</db.env>
+<db.url>jdbc:mysql://localhost:3306/dev</db.url>
+<db.username>devuser</db.username>
+<db.password>devpwd</db.password>
+</properties>
+</profile>
+</profiles>
+<build>
+<project>
+
